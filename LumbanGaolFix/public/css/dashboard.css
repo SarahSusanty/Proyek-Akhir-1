@@ -1,0 +1,432 @@
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+.box {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.sideBox {
+    width: 225px;
+    background-color: #0D5A66;
+    height: 650px;
+    z-index: 0;
+    transition: all 0.2s ease;
+    margin: 0;
+    padding: 0;
+}
+
+.box.active>.sideBox {
+    width: 50px;
+}
+
+.box>.sideBox>ul {
+    margin: 0;
+    padding: 0;
+}
+
+.box.active>.sideBox>ul>li {
+    padding: 10px 15px;
+}
+
+.box>.sideBox>ul>li .navText {
+    transition: all 0.2s ease;
+}
+
+.box.active>.sideBox>ul>li .navText {
+    display: none;
+}
+
+.box.active>.sideBox>ul>li:hover {
+    width: 225px;
+}
+
+.box.active>.sideBox>ul>li:hover>a>.navText {
+    display: inline-block;
+}
+
+.rightBox {
+    width: calc(100% - 225px);
+    background: white;
+    height: 650px;
+    background-color: #f2f2f2;
+    transition: all 0.2s ease;
+}
+
+.box.active>.rightBox {
+    width: calc(100% - 50px);
+}
+
+.sideBox>ul>li {
+    padding: 10px 20px;
+    color: white;
+    list-style: none;
+    transition: all 0.2s ease;
+}
+
+.sideBox>ul>li:hover {
+    background: white;
+}
+
+.sideBox>ul>li:hover>a {
+    color: #0D5A66;
+    text-decoration: none;
+}
+
+.nav-header {
+    border-bottom: 2px solid white;
+}
+
+.sideBox>ul>li>a {
+    font-size: 18px;
+    color: white;
+}
+
+.dropDownItem {
+    display: none;
+}
+
+.dropDownItem.active {
+    display: block;
+    margin-left: 40px;
+}
+
+.dropDownItem.active>ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.dropDownItem.active>ul>li {
+    list-style: none;
+    padding: 5px 10px;
+}
+
+.dropDownItem.active>ul>li>a {
+    color: white;
+}
+
+.dropDownItem.active>ul>li:hover {
+    background: white;
+}
+
+.dropDownItem.active>ul>li:hover>a {
+    color: #0D5A66;
+    text-decoration: none;
+}
+
+.rightBox>.header-right {
+    padding: 5px 10px;
+    background: white;
+    height: 80px;
+    overflow: hidden;
+}
+
+.rightBox>.header-right h4,
+.rightBox>.header-right p {
+    margin-left: 10px;
+}
+
+.rightBox>.header-right>h4>span {
+    margin-right: 10px
+}
+
+.content-right {
+    height: 540px;
+    overflow-y: auto;
+    padding: 10px 20px;
+}
+
+.content-right>.midContent {
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    background: white;
+    padding: 20px 40px;
+}
+
+.footer-right {
+    height: 30px;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    background: rgb(82, 81, 81);
+}
+
+.bigContent {
+    width: 100%;
+    background: white;
+    padding: 20px 40px;
+}
+
+.rowAspirasi,
+.rowForums {
+    padding: 10px;
+}
+
+.listAspirasi {
+    padding: 20px;
+    margin-bottom: 30px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.listAspirasi>a {
+    float: right;
+    margin-left: 10px;
+}
+
+.clear {
+    clear: both;
+}
+
+.rowForums>.listForum {
+    padding: 20px;
+    margin-bottom: 30px;
+    background: white;
+    border-radius: 20px;
+    cursor: pointer;
+    /* overflow: hidden; */
+}
+
+.rowForums>.listForum:hover {
+    background: #f2f2f2;
+}
+
+.rowForums>.listForum>div>.logoForum {
+    width: 70px;
+}
+
+.rowForums>.listForum>div>.logoForum>img {
+    width: 100%;
+}
+
+.rowForums>.listForum>div>.descForum {
+    width: calc(100% - 70px);
+}
+
+.pesanbaru {
+    display: relative;
+    margin-top: -30px;
+    margin-left: -25px;
+    background-color: rgb(252, 124, 5);
+    width: 50px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+}
+
+.rowForums>.listForum>a {
+    float: right
+}
+
+.biodata {
+    width: 49%;
+    margin-right: 50px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.profile {
+    width: 49%;
+    padding: 20px 30px;
+    border-radius: 20px;
+}
+
+.profile>.display-img {
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.profile>.display-img>img {
+    width: 100%;
+    border-radius: 40%;
+}
+
+.biodata input,
+.biodata textarea,
+.biodata select {
+    width: 100%;
+    height: 40px;
+}
+
+.biodata input[type='text'],
+.biodata textarea {
+    outline: none;
+    background: none;
+    border: none;
+}
+
+.messages {
+    height: 470px;
+    overflow-y: auto;
+    padding: 10px 20px;
+}
+
+.messages>.leftMessages,
+.messages>.rightMessages {
+    width: max-content;
+    max-width: 70%;
+    padding: 0.5px 15px;
+    color: white;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
+.messages>.leftMessages {
+    background: rgb(39, 177, 96);
+}
+
+.messages>.rightMessages {
+    background: rgb(38, 139, 206);
+    float: right
+}
+
+.messages>.leftMessages>pre,
+.messages>.rightMessages>pre {
+    white-space: pre-wrap;
+    color: white;
+    font-size: 1em;
+}
+
+.inputMessages {
+    height: 50px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.inputMessages>textarea {
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    padding: 5px 10px;
+    margin-left: 4px;
+}
+
+.inputMessages>a:first-child {
+    margin-left: 10px;
+}
+
+.inputMessages>a {
+    margin-right: 10px;
+    font-size: 2.5em;
+}
+
+.preview {
+    background: rgb(75, 75, 75);
+    min-height: min-content;
+    padding: 10px 20px;
+}
+
+.preview>a {
+    font-size: 2em;
+    color: white;
+    margin-top: -10px;
+}
+
+.preview>.item {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.preview>.item>img {
+    min-width: 20%;
+    max-width: 100%;
+}
+
+.preview>.item>embed {
+    width: 100%;
+    height: 500px;
+}
+
+.preview>a:hover {
+    text-decoration: none;
+}
+
+.itemFileM {
+    width: max-content;
+    color: white;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: auto;
+}
+
+.itemFileM.black {
+    background: rgb(61, 61, 61);
+    border-radius: 10px;
+}
+
+.itemFileM>.spesifikasi {
+    text-align: start;
+    margin-left: 10px;
+}
+
+.itemFileM>a {
+    margin-right: 10px;
+    font-size: 2em;
+    color: white;
+}
+
+.itemFileM>i {
+    font-size: 3em;
+}
+
+.itemFileM>i.red {
+    color: rgb(228, 82, 82);
+}
+
+.itemFileM>i.blue {
+    color: rgb(68, 68, 223);
+}
+
+.itemFileM>i.green {
+    color: rgb(37, 175, 37);
+}
+
+.itemFileM>i.blueLight {
+    color: rgb(110, 209, 223);
+}
+
+a.hapusPesan {
+    color: rgb(202, 25, 25);
+    font-size: 0.9em;
+}
+
+.displayNone {
+    display: none
+}
+
+.right {
+    float: right;
+    margin-top: -50px;
+    width: 140px;
+}
+
+@media (max-width: 992px) {
+    .biodata {
+        width: 100%;
+    }
+    .profile {
+        width: 100%;
+        margin-top: 40px;
+    }
+}

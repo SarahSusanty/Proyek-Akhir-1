@@ -1,0 +1,123 @@
+.bigDisplay {
+    background: rgb(255, 255, 255);
+    width: 100%;
+    padding: 30px;
+}
+
+.display {
+    display: none;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.display.active {
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    opacity: 1;
+}
+
+.box-transition {
+    transition: opacity 1s ease;
+}
+
+.display>img,
+.display>video {
+    width: 100%;
+}
+
+#prev,
+#next {
+    position: relative;
+    margin-top: -25%;
+    font-size: 40px;
+    cursor: pointer;
+    color: black;
+}
+
+#prev:hover,
+#next:hover {
+    padding: 5px 10px;
+    background: black;
+    color: white;
+    text-decoration: none;
+}
+
+#prev {
+    float: left;
+}
+
+#next {
+    float: right;
+}
+
+.allInAlbum {
+    background-color: #f2f2f2;
+    padding: 20px 30px;
+}
+
+.picture,
+.video {
+    background: white;
+    max-height: 400px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.picture>.list,
+.video>.list {
+    width: 18%;
+    display: inline-table;
+    margin-right: 1.25%;
+    margin-bottom: 20px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.picture>.list:hover,
+.picture>.list.active,
+.video>.list:hover,
+.video>.list.active {
+    opacity: 1;
+}
+
+.picture>.list>img,
+.video>.list>video {
+    width: 100%;
+}
+
+.Album {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.Album>.listAlbum {
+    width: 23%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.Album>.listAlbum>.displayAlbum {
+    width: 100%;
+}
+
+.Album>.listAlbum>.displayAlbum>img {
+    width: 100%;
+}
+
+.Album>.listAlbum>.listDesc {
+    padding: 10px;
+}
+
+@media (max-width: 992px) {
+    .Album>.listAlbum {
+        display: inline-table;
+        width: 44%;
+    }
+}

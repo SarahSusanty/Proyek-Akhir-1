@@ -1,0 +1,150 @@
+.header {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    background: rgb(71, 123, 182);
+    color: white;
+}
+
+.header>img {
+    height: 70%;
+    margin-right: 20px;
+}
+
+.header>h3 {
+    align-self: center;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: row;
+}
+
+.wrap>.wrapSidebar {
+    flex-grow: 0.5;
+    height: 85vh;
+    background: rgb(133, 133, 133);
+    padding: 10px 20px;
+}
+
+.wrap>.wrapContent {
+    flex-grow: 6;
+    height: 85vh;
+    overflow-y: auto;
+}
+
+.wrap>.wrapSidebar>.folderList {
+    padding: 10px;
+    border-bottom: 2px solid white;
+}
+
+.wrap>.wrapSidebar>.folderList>.folder {
+    display: flex;
+    flex-direction: row;
+    background: white;
+    color: black;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 0px 10px 0px 10px;
+    margin-bottom: 20px;
+}
+
+.wrap>.wrapSidebar>.folderList>.folder.hover:hover,
+.wrap>.wrapSidebar>.folderList>.folder.active {
+    background: #dfdfdf;
+}
+
+.wrap>.wrapSidebar>.folderList>.folder:nth-last-child() {
+    margin-bottom: 0px;
+}
+
+.wrap>.wrapSidebar>.folderList>.folder>img {
+    width: 40px;
+    align-self: center;
+    align-self: center;
+    margin-right: 20px;
+}
+
+.wrap>.wrapSidebar>.folderList>.dropFile {
+    height: 50px;
+}
+
+.wrap>.wrapSidebar>.folderList>.folder>.folderName {
+    align-self: center;
+    font-size: 30px;
+}
+
+.visibility {
+    display: none;
+}
+
+.addFile {
+    margin-top: 15px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.addFile:hover {
+    background: #dfdfdf;
+}
+
+.wrap>.wrapContent>table {
+    width: 100%;
+}
+
+.wrap>.wrapContent>table>thead {
+    background: rgb(78, 78, 78);
+    color: white;
+}
+
+.wrap>.wrapContent>table th {
+    text-align: center;
+    padding: 10px;
+}
+
+.wrap>.wrapContent>table td {
+    padding: 5px;
+}
+
+.wrap>.wrapContent>table td>.fileIcon {
+    width: 40px;
+    vertical-align: middle;
+}
+
+.wrap>.wrapContent>table td>.fileName {
+    width: calc(95% - 40px)
+}
+
+.wrap>.wrapContent>table td>.fileIcon,
+.wrap>.wrapContent>table td>.fileName {
+    display: inline-table;
+}
+
+.loading {
+    display: none;
+}
+
+.loading.active {
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    height: 10vh;
+}
+
+.loading.active>.iconLoading {
+    width: 20%;
+    margin: auto;
+    margin-top: 20vh;
+    text-align: center;
+}
+
+.loading.active>.iconLoading>img {
+    width: 100%;
+}

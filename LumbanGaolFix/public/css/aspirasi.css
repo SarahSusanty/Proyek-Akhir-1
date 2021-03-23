@@ -1,0 +1,95 @@
+.listAspirasi {
+    padding: 20px 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background: white;
+}
+
+.listReplay {
+    padding: 20px;
+    margin-left: 70px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background: white;
+}
+
+.listReplay:nth-last-child() {
+    margin-bottom: 60px;
+}
+
+.listAspirasi>.headerList,
+.listReplay>.headerList {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+    padding: 10px;
+    width: 100%;
+}
+
+.listAspirasi>.headerList>img {
+    width: 60px;
+}
+
+.listReplay>.headerList>img {
+    width: 40px;
+}
+
+.listAspirasi>.headerList>h6,
+.listReplay>.headerList>h6 {
+    margin-left: 30px;
+}
+
+.listAspirasi>.headerList>small {
+    float: right;
+}
+
+.listAspirasi>.bodyList,
+.listReplay>.bodyList {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.listAspirasi>.clear,
+.listReplay>.clear {
+    clear: both;
+}
+
+.listAspirasi>small,
+.listReplay>small {
+    float: right;
+}
+
+.listAspirasi>.footerList>a {
+    margin-bottom: 10px;
+}
+
+.rekomendasi {
+    margin-top: 30px;
+}
+
+.listRekomendasi {
+    padding: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background: white;
+    border-radius: 10px;
+}
+
+.listRekomendasi:hover {
+    background-color: #F2F2F2;
+}
+
+.boxSearch {
+    padding: 0px;
+    border: none;
+    background: none;
+}
+
+.bordered {
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #f2f2f2;
+}

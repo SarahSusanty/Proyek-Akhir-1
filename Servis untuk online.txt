@@ -1,0 +1,6 @@
+tambahkan pada service.php pada folder config
+'google' => [
+        'client_id' => '348072084661-tv3ogviu4vv5aj3mk4n6a4q99tv730e4.apps.googleusercontent.com',
+        'client_secret' => 'XzJt7VqS19-Y0i4jSPi3LE1N',
+        'redirect' => 'https://desalumbangaol.com/auth/google/callback',
+],

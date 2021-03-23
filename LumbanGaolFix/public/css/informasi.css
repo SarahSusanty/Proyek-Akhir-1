@@ -1,0 +1,69 @@
+.listInformasi {
+    padding: 20px 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.listInformasi>.displayImg>img {
+    min-width: 20%;
+    width: max-content;
+    max-width: 80%;
+}
+
+.listInformasi>small {
+    float: right;
+}
+
+.rekomendasi {
+    margin-top: 30px;
+}
+
+.listRekomendasi {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.listRekomendasi:hover {
+    background-color: #F2F2F2;
+}
+
+.miniDisplay {
+    text-align: center;
+}
+
+.miniDisplay img {
+    width: 100%;
+    vertical-align: top;
+    resize: 100px;
+}
+
+.listRekomendasi>.desc {
+    width: 100%;
+    padding: 5px;
+    /* margin-left: 10px; */
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.category a {
+    color: Black;
+    font-size: 1.2em;
+}
+
+@media (max-width: 992px) {
+    .listRekomendasi {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .miniDisplay {
+        width: 30%;
+    }
+}

@@ -1,0 +1,176 @@
+.carousel-item>img {
+    height: 90vh;
+}
+
+.carousel-item>h2 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    font-size: 50px;
+    color: rgb(241, 241, 241);
+    text-align: center;
+    font-family: Sargoe-script;
+}
+
+.carousel-caption {
+    /* color: black; */
+    font-size: 20px;
+    font-family: Muli;
+}
+
+.animasi-ketik {
+    width: 720px;
+    font-size: 29px;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-animation: typing 1s steps(70, end);
+    animation: animasi-ketik 1s steps(70, end);
+    /* background: black; */
+    font-family: "Segoe UI";
+    font-style: italic;
+}
+
+.list-information {
+    width: 32%;
+    /* height: 400px;
+    background-color: black; */
+    margin-right: 2%;
+}
+
+.list-information:nth-last-child() {
+    margin-right: 0px;
+}
+
+.tentangDesa {
+    padding: 20px 20px;
+    margin-top: 50px;
+}
+
+.tentangDesa>.img-kepalaDesa {
+    width: 20%;
+}
+
+.tentangDesa>.img-kepalaDesa img {
+    width: 100%;
+}
+
+.tentangDesa>.text-tentangDesa {
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.tentangDesa>.text-tentangDesa pre {
+    white-space: pre-wrap;
+    font-family: 'Muli';
+    font-size: 18px;
+}
+
+.list-information {
+    width: 34%;
+    margin-right: 2%;
+}
+
+.list-information:nth-last-child() {
+    margin-right: 0px;
+}
+
+.list-information>.img-display {
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.list-information>.img-display>img:hover {
+    transform: scale(1.5);
+}
+
+.list-information>.img-display>img {
+    width: 100%;
+    transition: all 0.4s ease;
+}
+
+.list-information>.des-information {
+    padding: 10px 20px;
+}
+
+.alamat {
+    padding: 20px 30px;
+}
+
+.iframe-peta {
+    width: 60%;
+}
+
+.desc-alamat {
+    width: 40%;
+}
+
+.iframe-peta iframe {
+    width: 100%;
+    height: 60vh;
+}
+
+.desc-alamat {
+    padding: 10px 20px;
+}
+
+.desc-alamat pre {
+    white-space: pre-wrap;
+    font-family: 'Muli';
+    font-size: 16px;
+}
+
+.footer-item {
+    width: 33%;
+    margin-right: 2%;
+}
+
+.footer-item p {
+    text-align: left;
+}
+
+.footer-item img {
+    width: 40%;
+}
+
+.footer-item:nth-last-child() {
+    margin-right: 0px;
+}
+
+.footer {
+    background: #5A5A5A;
+    padding: 10px;
+    color: white;
+}
+
+.footer>p {
+    text-align: center;
+}
+
+@media (max-width: 992px) {
+    .carousel-item>h2 {
+        font-size: 30px;
+    }
+    .animasi-ketik {
+        width: 450px;
+    }
+    .tentangDesa>.img-kepalaDesa {
+        width: 100%;
+    }
+    .iframe-peta {
+        width: 100%;
+    }
+    .desc-alamat {
+        width: 100%;
+    }
+    .list-information {
+        width: 100%;
+        margin-left: 0px;
+        margin-bottom: 30px;
+    }
+    .footer-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
